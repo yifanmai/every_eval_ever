@@ -1,0 +1,61 @@
+{
+  "schema_version": "0.0.1",
+  "evaluation_id": "livecodebenchpro/kwaipilot-40b-0604/1760492095.8105888",
+  "retrieved_timestamp": 1760492095.8105888,
+  "source_data_urls": [
+    "https://webhook.cp-bench.orzzh.com/leaderboard/llm/difficulty?difficulty=hard&benchmark_mode=live",
+    "https://webhook.cp-bench.orzzh.com/leaderboard/llm/difficulty?difficulty=medium&benchmark_mode=live",
+    "https://webhook.cp-bench.orzzh.com/leaderboard/llm/difficulty?difficulty=easy&benchmark_mode=live"
+  ],
+  "leaderboard_name": "Live Code Bench Pro",
+  "source_metadata": {
+    "source_organization_name": "TBD",
+    "evaluator_relationship": "third_party"
+  },
+  "model_info": {
+    "name": "kwaipilot-40b-0604",
+    "developer": "N/A",
+    "inference_platform": "kuaishou"
+  },
+  "evaluation_results": [
+    {
+      "evaluation_name": "Hard Problems",
+      "metric_config": {
+        "evaluation_description": "Pass@1 on Hard Problems",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0,
+        "max_score": 1
+      },
+      "score_details": {
+        "score": 0.0
+      }
+    },
+    {
+      "evaluation_name": "Medium Problems",
+      "metric_config": {
+        "evaluation_description": "Pass@1 on Medium Problems",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0,
+        "max_score": 1
+      },
+      "score_details": {
+        "score": 0.07042253521126761
+      }
+    },
+    {
+      "evaluation_name": "Easy Problems",
+      "metric_config": {
+        "evaluation_description": "Pass@1 on Easy Problems",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0,
+        "max_score": 1
+      },
+      "score_details": {
+        "score": 0.056338028169014086
+      }
+    }
+  ]
+}
