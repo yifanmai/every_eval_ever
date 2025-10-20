@@ -3,7 +3,13 @@ name: Validate data
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'scripts/validate_data.py'
+      - 'data/**'
   pull_request:
+    paths:
+      - 'scripts/validate_data.py'
+      - 'data/**'
 
 jobs:
   validate-json:
