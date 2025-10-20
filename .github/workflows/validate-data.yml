@@ -28,7 +28,8 @@ jobs:
         uses: astral-sh/setup-uv@v6
         with:
           version: "0.9.4"
-          enable-cache: true
+          # Disable cache because there are no requirements lockfiles
+          enable-cache: false
 
       - name: Download latest schema
         run: wget https://raw.githubusercontent.com/evaleval/evalHub/refs/heads/main/schema/eval.schema.json
