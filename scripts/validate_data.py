@@ -16,7 +16,9 @@ from jsonschema.validators import validator_for
 
 def get_schema_validator(file_path: str) -> Validator:
     with open(file_path, "r") as f:
-        return validator_for(json.load(f))
+        schema = json.load(f)
+        validator_cls = validator_for(schema)
+        return validator_cls(schema)
 
 
 def validate_file(file_path: str, validator: Validator) -> None:
